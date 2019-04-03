@@ -274,5 +274,8 @@ PuzzleState.calculateTilesOutOfPlace = function(a, b) {
             }
         }
     }
+    //Modified function to return Tiles Out of Place squared, to demonstrate
+    //inadmissible heuristic causing suboptimal solution
+    tilesOutOfPlace = tilesOutOfPlace*tilesOutOfPlace;
     return tilesOutOfPlace;
 };
